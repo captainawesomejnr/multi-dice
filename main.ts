@@ -3,6 +3,9 @@ radio.onReceivedNumber(function (receivedNumber) {
         basic.showIcon(IconNames.Sad)
         basic.pause(2000)
         control.reset()
+    } else if (receivedNumber == Dice) {
+        basic.showIcon(IconNames.Asleep)
+        control.reset()
     } else {
         basic.showIcon(IconNames.Happy)
         basic.pause(2000)
