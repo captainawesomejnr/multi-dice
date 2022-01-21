@@ -13,7 +13,7 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 input.onGesture(Gesture.Shake, function () {
-    Dice = randint(1, 10)
+    Dice = randint(1, 100)
     basic.showNumber(Dice)
     radio.sendNumber(Dice)
 })
