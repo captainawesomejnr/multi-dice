@@ -3,8 +3,6 @@ radio.onReceivedNumber(function (receivedNumber) {
         basic.showIcon(IconNames.Sad)
         basic.pause(2000)
         control.reset()
-    } else if (receivedNumber == Dice) {
-        basic.showIcon(IconNames.Asleep)
     } else {
         basic.showIcon(IconNames.Happy)
         basic.pause(2000)
@@ -12,8 +10,24 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 input.onGesture(Gesture.Shake, function () {
-    Dice = randint(1, 6)
-    basic.showNumber(Dice)
+    Dice = randint(1, 2)
+    if (Dice == 1) {
+        basic.showLeds(`
+            # . . . #
+            # # . # #
+            # # # # #
+            . # # # .
+            . . # . .
+            `)
+    } else {
+        basic.showLeds(`
+            # . . . .
+            # . # # #
+            # . # . #
+            # . . . #
+            # # # # #
+            `)
+    }
     radio.sendNumber(Dice)
 })
 let Dice = 0
