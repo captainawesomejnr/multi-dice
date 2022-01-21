@@ -10,24 +10,8 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 input.onGesture(Gesture.Shake, function () {
-    Dice = randint(1, 2)
-    if (Dice == 1) {
-        basic.showLeds(`
-            # . . . #
-            # # . # #
-            # # # # #
-            . # # # .
-            . . # . .
-            `)
-    } else {
-        basic.showLeds(`
-            # . . . .
-            # . # # #
-            # . # . #
-            # . . . #
-            # # # # #
-            `)
-    }
+    Dice = randint(1, 10)
+    basic.showNumber(Dice)
     radio.sendNumber(Dice)
 })
 let Dice = 0
