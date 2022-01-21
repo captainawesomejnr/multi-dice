@@ -14,7 +14,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 input.onGesture(Gesture.Shake, function () {
     Dice = randint(1, 100)
-    basic.showNumber(Dice)
+    basic.showString("There is a " + Dice + "% chance you will win")
     radio.sendNumber(Dice)
 })
 let Dice = 0
