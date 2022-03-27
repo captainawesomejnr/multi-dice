@@ -5,7 +5,6 @@ radio.onReceivedNumber(function (receivedNumber) {
         control.reset()
     } else if (receivedNumber == Dice) {
         basic.showIcon(IconNames.Asleep)
-        basic.pause(2000)
         control.reset()
     } else {
         basic.showIcon(IconNames.Happy)
@@ -15,6 +14,49 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 input.onGesture(Gesture.Shake, function () {
     Dice = randint(1, 26)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . # . .
+        . . . . .
+        . . . . .
+        `)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        # . . . #
+        . . . . .
+        . . . . .
+        `)
+    basic.showLeds(`
+        . . # . .
+        . . . . .
+        . . . . .
+        . . . . .
+        # . . . #
+        `)
+    basic.showLeds(`
+        # . . . #
+        . . . . .
+        . . . . .
+        . . . . .
+        # . . . #
+        `)
+    basic.showLeds(`
+        # . . . #
+        . . . . .
+        . . # . .
+        . . . . .
+        # . . . #
+        `)
+    basic.showLeds(`
+        # . # . #
+        . . . . .
+        . . . . .
+        . . . . .
+        # . # . #
+        `)
+    basic.clearScreen()
     if (Dice == 1) {
         basic.showString("A")
     } else if (Dice == 2) {
