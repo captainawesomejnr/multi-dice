@@ -71,6 +71,13 @@ input.onGesture(Gesture.Shake, function () {
         # . # . #
         `)
     basic.clearScreen()
+    basic.showLeds(`
+        # . . . #
+        # # . # #
+        . . . . .
+        # . . . #
+        . # # # .
+        `)
     basic.showNumber(Dice)
     radio.sendNumber(Dice)
 })
