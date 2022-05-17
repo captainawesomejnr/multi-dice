@@ -1,6 +1,6 @@
 {
     "name": "multi-dice",
-    "version": "5.0.2",
+    "version": "5.0.1",
     "dependencies": {
         "core": "*",
         "radio": "*",
