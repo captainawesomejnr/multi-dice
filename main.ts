@@ -12,6 +12,67 @@ radio.onReceivedNumber(function (receivedNumber) {
         control.reset()
     }
 })
+function Startup () {
+    for (let index = 0; index < 4; index++) {
+        basic.showLeds(`
+            . # # # .
+            . # . # .
+            . # # # .
+            . # . # .
+            . # # # .
+            `)
+        basic.showLeds(`
+            . . # # #
+            . . # . #
+            # # # # #
+            # . # . .
+            # # # . .
+            `)
+        basic.showLeds(`
+            . # # # .
+            . # . # .
+            . # # # .
+            . # . # .
+            . # # # .
+            `)
+        basic.showLeds(`
+            # # # . .
+            # . # . .
+            # # # # #
+            . . # . #
+            . . # # #
+            `)
+    }
+    basic.showLeds(`
+        . # # # .
+        . # . # .
+        . # # # .
+        . # . # .
+        . # # # .
+        `)
+    basic.showLeds(`
+        . . . . .
+        . # . # .
+        . # # # .
+        . # . # .
+        . . . . .
+        `)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . # # # .
+        . . . . .
+        . . . . .
+        `)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . # . .
+        . . . . .
+        . . . . .
+        `)
+    basic.clearScreen()
+}
 input.onGesture(Gesture.Shake, function () {
     Dice = randint(1, 8)
     basic.showLeds(`
@@ -76,3 +137,4 @@ input.onGesture(Gesture.Shake, function () {
 })
 let Dice = 0
 radio.setGroup(202)
+Startup()
