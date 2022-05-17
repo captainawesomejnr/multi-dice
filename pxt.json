@@ -1,21 +1,21 @@
 {
-    "name": "Multi Dice",
-    "version": "4.1.1",
-    "description": "",
+    "name": "multi-dice",
     "dependencies": {
         "core": "*",
         "radio": "*",
         "microphone": "*"
     },
     "files": [
+        ".github/ISSUE_TEMPLATE/bug_report.md",
+        ".vscode/settings.json",
+        ".vscode/tasks.json",
+        "README.md",
+        "SECURITY.md",
         "main.blocks",
         "main.ts",
-        "README.md",
-        "tutorial-info-cache.json",
-        null
-    ],
-    "testFiles": [
-        "test.ts"
+        "test.ts",
+        "tsconfig.json",
+        "tutorial-info-cache.json"
     ],
     "targetVersions": {
         "target": "4.0.18",
