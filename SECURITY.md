@@ -13,5 +13,5 @@ currently being supported with security updates.
 | < 4.0   | :x:                |
 
 ## Reporting a Vulnerability
-If there is a vulnerabillaty, please create an issue with the tag 'vulnerabillity' and I will get to you ASAP.
+If there is a vulnerabillaty, please create a issue using the 'Vulnerbillity Report' template and I will get to you ASAP.
 
