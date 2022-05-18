@@ -14,6 +14,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 input.onGesture(Gesture.Shake, function () {
     Dice = randint(1, 8)
+    radio.sendNumber(Dice)
     basic.showLeds(`
         . . . . .
         . . . . .
@@ -136,7 +137,6 @@ input.onGesture(Gesture.Shake, function () {
             `)
     }
     basic.clearScreen()
-    radio.sendNumber(Dice)
 })
 let Dice = 0
 radio.setGroup(202)
