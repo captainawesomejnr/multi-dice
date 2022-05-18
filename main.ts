@@ -12,6 +12,9 @@ radio.onReceivedNumber(function (receivedNumber) {
         control.reset()
     }
 })
+input.onButtonPressed(Button.AB, function () {
+    control.reset()
+})
 input.onGesture(Gesture.Shake, function () {
     basic.showLeds(`
         . . . . .
