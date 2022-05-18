@@ -69,6 +69,8 @@ input.onGesture(Gesture.Shake, function () {
         . . . . .
         # . # . #
         `)
+    basic.clearScreen()
+    basic.pause(500)
     if (Dice == 1) {
         basic.showLeds(`
             . . . . .
