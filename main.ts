@@ -13,6 +13,7 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 input.onButtonPressed(Button.AB, function () {
+    basic.showString("EXITING GAME")
     control.reset()
 })
 input.onGesture(Gesture.Shake, function () {
@@ -24,7 +25,7 @@ input.onGesture(Gesture.Shake, function () {
         . . . . .
         `)
     basic.showLeds(`
-        . . . . .
+        . . . . #
         . . . . .
         # . . . #
         . . . . .
