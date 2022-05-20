@@ -145,7 +145,6 @@ input.onGesture(Gesture.Shake, function () {
             # . # . #
             `)
     }
-    basic.clearScreen()
 })
 let Dice = 0
 radio.setGroup(202)
