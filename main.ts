@@ -77,6 +77,7 @@ input.onGesture(Gesture.Shake, function () {
         . . . . .
         # . # . #
         `)
+    radio.sendNumber(Dice)
     basic.clearScreen()
     basic.pause(500)
     if (Dice == 1) {
@@ -149,4 +150,3 @@ input.onGesture(Gesture.Shake, function () {
 let Dice = 0
 radio.setGroup(202)
 Dice = randint(1, 8)
-radio.sendNumber(Dice)
