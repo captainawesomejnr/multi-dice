@@ -87,11 +87,11 @@ input.onGesture(Gesture.Shake, function () {
             `)
     } else if (Dice == 3) {
         basic.showLeds(`
-            . . # . .
             . . . . .
             . . . . .
+            # . # . #
             . . . . .
-            # . . . #
+            . . . . .
             `)
     } else if (Dice == 4) {
         basic.showLeds(`
