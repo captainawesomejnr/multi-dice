@@ -11,11 +11,11 @@
         . . . . . 
         . . . . .
         `</field><next><block type="device_show_leds" id="xOo8SO.rJ=BHEi0E)?l#"><field name="LEDS">`
-        . . # . . 
         . . . . . 
         . . . . . 
+        # . # . # 
         . . . . . 
-        # . . . #
+        . . . . .
         `</field><next><block type="device_show_leds" id="S!qjQsmre7mjyDU{C9VD"><field name="LEDS">`
         # . . . # 
         . . . . . 
@@ -59,11 +59,11 @@
         . . . . . 
         . . . . .
         `</field></block></statement><value name="IF2"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="jv33)Rh8kJ$BC48W,5];"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="x(Re~:s4H~(,8Kz@7w^R"><field name="VAR" id="qS}O#D]WA+Qo?D:V%O!D">Dice</field></block></value><value name="B"><shadow type="math_number" id="Ie+~l.MTi?@_(eT9OmEr"><field name="NUM">3</field></shadow></value></block></value><statement name="DO2"><block type="device_show_leds" id="(R!x_=@J:*)c!3bF9FWG"><field name="LEDS">`
-        . . # . . 
         . . . . . 
         . . . . . 
+        # . # . # 
         . . . . . 
-        # . . . #
+        . . . . .
         `</field></block></statement><value name="IF3"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="00bm][16:fH=3%eF+RJ_"><field name="OP">EQ</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="]4jHK~LY3L}nAo%L##;D"><field name="VAR" id="qS}O#D]WA+Qo?D:V%O!D">Dice</field></block></value><value name="B"><shadow type="math_number" id="FZsjp[Rc}mLF5TFa$OgV"><field name="NUM">4</field></shadow></value></block></value><statement name="DO3"><block type="device_show_leds" id="WaLm+h;w{r$Q1pjEQIeW"><field name="LEDS">`
         # . . . # 
         . . . . . 
