@@ -80,6 +80,9 @@ input.onGesture(Gesture.Shake, function () {
     radio.sendNumber(Dice)
     basic.clearScreen()
     basic.pause(500)
+    ShowRoll()
+})
+function ShowRoll () {
     if (Dice == 1) {
         basic.showLeds(`
             . . . . .
@@ -145,7 +148,7 @@ input.onGesture(Gesture.Shake, function () {
             # . # . #
             `)
     }
-})
+}
 let Dice = 0
 radio.setGroup(202)
 Dice = randint(1, 8)
