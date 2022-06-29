@@ -19,7 +19,7 @@
         "tutorial-info-cache.json"
     ],
     "targetVersions": {
-        "target": "4.0.18",
+        "target": "5.0.6",
         "targetId": "microbit"
     },
     "supportedTargets": [

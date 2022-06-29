@@ -2,17 +2,13 @@ radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber > Dice) {
         basic.showIcon(IconNames.Sad)
         basic.pause(2000)
-        music.playMelody("G B A G C5 B A B ", 120)
-        music.playTone(440, music.beat(BeatFraction.Double))
         control.reset()
     } else if (receivedNumber == Dice) {
         basic.showIcon(IconNames.Asleep)
-        music.playMelody("E B C5 A B G A F ", 120)
         control.reset()
     } else {
         basic.showIcon(IconNames.Happy)
         basic.pause(2000)
-        music.playMelody("C D E F G A B C5 ", 120)
         control.reset()
     }
 })
