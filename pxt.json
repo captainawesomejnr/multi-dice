@@ -16,7 +16,8 @@
         "main.ts",
         "test.ts",
         "tsconfig.json",
-        "tutorial-info-cache.json"
+        "tutorial-info-cache.json",
+        "main.py"
     ],
     "targetVersions": {
         "target": "5.0.12",
