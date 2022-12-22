@@ -1,69 +1,3 @@
-input.onButtonPressed(Button.AB, function () {
-    basic.showString("EXITING GAME")
-    control.reset()
-})
-input.onGesture(Gesture.Shake, function () {
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . # . .
-        . . . . .
-        . . . . .
-        `)
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        # . . . #
-        . . . . .
-        . . . . .
-        `)
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        # . # . #
-        . . . . .
-        . . . . .
-        `)
-    basic.showLeds(`
-        # . . . #
-        . . . . .
-        . . . . .
-        . . . . .
-        # . . . #
-        `)
-    basic.showLeds(`
-        # . . . #
-        . . . . .
-        . . # . .
-        . . . . .
-        # . . . #
-        `)
-    basic.showLeds(`
-        # . # . #
-        . . . . .
-        . . . . .
-        . . . . .
-        # . # . #
-        `)
-    basic.showLeds(`
-        # . # . #
-        . . . . .
-        . . # . .
-        . . . . .
-        # . # . #
-        `)
-    basic.showLeds(`
-        # . # . #
-        . . . . .
-        # . . . #
-        . . . . .
-        # . # . #
-        `)
-    radio.sendNumber(Dice)
-    basic.clearScreen()
-    basic.pause(500)
-    ShowRoll()
-})
 radio.onReceivedNumber(function (receivedNumber) {
     if (receivedNumber > Dice) {
         basic.showIcon(IconNames.Sad)
@@ -77,6 +11,74 @@ radio.onReceivedNumber(function (receivedNumber) {
         basic.pause(2000)
         control.reset()
     }
+})
+input.onButtonPressed(Button.AB, function () {
+    basic.showString("EXITING GAME")
+    control.reset()
+})
+input.onGesture(Gesture.Shake, function () {
+    for (let index = 0; index < 4; index++) {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # . .
+            . . . . .
+            . . . . .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            # . . . #
+            . . . . .
+            . . . . .
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            # . # . #
+            . . . . .
+            . . . . .
+            `)
+        basic.showLeds(`
+            # . . . #
+            . . . . .
+            . . . . .
+            . . . . .
+            # . . . #
+            `)
+        basic.showLeds(`
+            # . . . #
+            . . . . .
+            . . # . .
+            . . . . .
+            # . . . #
+            `)
+        basic.showLeds(`
+            # . # . #
+            . . . . .
+            . . . . .
+            . . . . .
+            # . # . #
+            `)
+        basic.showLeds(`
+            # . # . #
+            . . . . .
+            . . # . .
+            . . . . .
+            # . # . #
+            `)
+        basic.showLeds(`
+            # . # . #
+            . . . . .
+            # . . . #
+            . . . . .
+            # . # . #
+            `)
+    }
+    radio.sendNumber(Dice)
+    basic.clearScreen()
+    basic.pause(500)
+    ShowRoll()
 })
 function ShowRoll () {
     if (Dice == 1) {
